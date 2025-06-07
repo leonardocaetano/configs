@@ -1,0 +1,54 @@
+============ WINDOWS
+
+install powertoys
+install sysinternalsuite
+install startallback
+install firefox
+
+
+============ ARCH LINUX
+
+
+
+============ EMACS
+
+copy .emacs to your home folder
+install ripgrep and liberationmono 
+
+============ GIT
+
+- install git and github-cli
+
+- git commands:
+
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+
+- to test this:
+
+git config --get user.name
+git config --get user.email
+
+- to change the default branch on new repositories from master to main:
+
+git config --global init.defaultBranch main
+
+- to enable colorful output:
+
+git config --global color.ui auto
+
+- now, for github-cli:
+
+gh auth login
+
+- that's it. this started a interative login process
+
+- basic usage:
+
+git add *
+git commit -m "Your comment"
+git push
+
+git pull
+
+git clone <repo>
