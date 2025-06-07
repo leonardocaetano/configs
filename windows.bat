@@ -5,4 +5,4 @@ if not exist c:\home (
 )
 
 del c:\home\.emacs
-mklink /h c:\home\.emacs c:\dev\configs\emacs
+mklink /h c:\home\.emacs c:\dev\configs\.emacs
