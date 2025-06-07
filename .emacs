@@ -16,7 +16,7 @@
 			 
 ;; list the packages you want
 (setq package-list
-    '(company evil smex deadgrep dired-sidebar)) ;; put your packages here!
+    '(evil smex deadgrep dired-sidebar)) ;; put your packages here!
 
 ;; activate all the packages
 (package-initialize)
@@ -33,15 +33,15 @@
 ;; smex specific settings
 (global-set-key (kbd "M-x") 'smex)
 
-;; company specify settings
-(global-company-mode 1)
-(with-eval-after-load 'company
-  ;; Make TAB and S-TAB cycle through candidates
-  (define-key company-active-map (kbd "TAB") 'company-select-next)
-  (define-key company-active-map (kbd "<tab>") 'company-select-next)
-  (define-key company-active-map (kbd "S-TAB") 'company-select-previous)
-  (define-key company-active-map (kbd "<backtab>") 'company-select-previous)
-  (setq company-selection-wrap-around t))
+;; company specify settings ;; we disable autocomplete for now, too annoying!
+;; (global-company-mode 1)
+;; (with-eval-after-load 'company
+;;   ;; Make TAB and S-TAB cycle through candidates
+;;   (define-key company-active-map (kbd "TAB") 'company-select-next)
+;;   (define-key company-active-map (kbd "<tab>") 'company-select-next)
+;;   (define-key company-active-map (kbd "S-TAB") 'company-select-previous)
+;;   (define-key company-active-map (kbd "<backtab>") 'company-select-previous)
+;;   (setq company-selection-wrap-around t))
 
 ;; deadgrep (you need to have ripgrep installed on your system and in your $PATH
 (defun my-open-deadgrep-and-edit ()
@@ -188,7 +188,7 @@
   (set-face-attribute 'compilation-info nil :background "#003300" :foreground "light green"))
   
 ;; highlight current line
-(global-hl-line-mode 1) 
+;; (global-hl-line-mode 1) 
 
 ;; ================================ GLOBAL CONFIGS
 

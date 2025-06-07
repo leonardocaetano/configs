@@ -1,19 +1,66 @@
 ============ WINDOWS
 
-install powertoys
-install sysinternalsuite
-install startallback
-install firefox
+- some software you need to install:
+ 
+- powertoys (disable ctrl focus), sysinternals suite, voidtools everything, free downaload manager, firefox (also login to your account to sync everything), speedscrunch calculator, wolfram mathematica, startallback
+(look for your start startallback key), 7zip, milton software, qbittorent, vlc, sumatrapdf, notepad++, baregrep, less (also put it on yout $PATH)
+ 
+- download and sync google drive (remeber to set it to c:\drive)
 
+- some dev specific software:
+ 
+- emacs, llvm (put it on c:\LLVM, also in your path), visual studio
+
+- for emacs you want to create a user variable called HOME with the value c:\home 
+
+- download msys2, use the MSYS2 MSYS launcher (this enables the use of linux tools like awk, gdb, etc inside windows, for native windows dev)
+
+- remember to bind ctrl to capslock using ctrl2cap.exe
+ 
+- disable the hibernation file with powercfg.exe /hibernate off
+
+- disable computer poweroff in control panel
+
+- disable that weird ctrl+shit sticky keys and locale change in... somewhere in the system menu
+ 
+- disable system sounds in control panel -> sound -> sounds
+ 
+- on windows 11, restore the old right click running windows\restore_old_menu_w11.reg
+
+- if you are dual booting with linux run windows\windows_utc_for_linux_dualboot.reg
+
+- run windows.bat to sync your config files
 
 ============ ARCH LINUX
 
+- install it using arch-install included script
 
+- just use the default pacman mirror, it is the fastest one
+
+- use gnome, install gnome-extra and gnome-tweaks (to bind ctrl to caps)
+
+- generally, you want to run pacman -Syyu once every two weeks
+
+- some things you mostly will want to install: emacs vim ttf-liberation ripgrep llvm clang gcc gdb less
+
+- remember to give your user full access to sudo, wheel, etc. also to remove the need to put sudo password everytime
+
+- run linux.sh to sync your config files
 
 ============ EMACS
 
-copy .emacs to your home folder
-install ripgrep and liberationmono 
+- copy .emacs to your home folder
+- install ripgrep and liberation mono
+
+- some basic emacs usage:
+
+F5: cicle trough .c/.h
+F6: ripgrep
+F8: compile
+F12: filetree
+remember to use chmod u+x to be able to compile
+M-x dired to create folders (+) and files (C-x C-f)
+To delete files in dired, select them with x and use d to delete them
 
 ============ GIT
 
