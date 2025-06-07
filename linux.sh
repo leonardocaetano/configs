@@ -1,3 +1,3 @@
 #!/bin/bash
 
-# ln -s -f ~/dev/congigs/emacs ~/.emacs &> /dev/null
+# ln -s -f ~/dev/configs/.emacs ~/.emacs &> /dev/null
