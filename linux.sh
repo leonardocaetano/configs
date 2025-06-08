@@ -7,3 +7,7 @@ ln -s ~/dev/configs/.emacs ~/.emacs
 # bash
 [ -e ~/.bashrc ] && rm -f ~/.bashrc 
 ln -s ~/dev/configs/.bashrc ~/.bashrc
+
+#wezterm
+[ -e ~/.wezterm.lua ] && rm -f ~/.wezterm.lua
+ln -s ~/dev/configs/wezterm.lua ~/.wezterm.lua
