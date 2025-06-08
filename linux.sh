@@ -8,6 +8,10 @@ ln -s ~/dev/configs/.emacs ~/.emacs
 [ -e ~/.bashrc ] && rm -f ~/.bashrc 
 ln -s ~/dev/configs/.bashrc ~/.bashrc
 
-#wezterm
+# wezterm
 [ -e ~/.wezterm.lua ] && rm -f ~/.wezterm.lua
 ln -s ~/dev/configs/wezterm.lua ~/.wezterm.lua
+
+# tmux
+[ -e ~/.tmux.conf ] && rm -f ~/.tmux.conf
+ln -s ~/dev/configs/.tmux.conf ~/.tmux.conf

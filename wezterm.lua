@@ -13,10 +13,10 @@ end
 -- config.color_scheme = 'Ibm 3270 (High Contrast) (Gogh)'
 config.enable_tab_bar = false
 config.font = wezterm.font 'Liberation Mono'
-window_decorations = "NONE"
+-- window_decorations = "NONE"
 adjust_window_size_when_changing_font_size = false -- this needs to be disabled when using a tiling wm
 config.font_size = 14.0
-config.default_cursor_style = "SteadyBar"
+config.default_cursor_style = "SteadyBlock"
 config.window_padding = 
 {
     left = 0,

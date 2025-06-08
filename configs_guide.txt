@@ -39,6 +39,8 @@
 
 - use gnome, install gnome-extra and gnome-tweaks (to bind ctrl to caps)
 
+- TO FIX EMACS IN GNOME: commenting out the StartupWMClass line in /usr/share/applications/emacsclient.desktop allows pinning the Emacs (GUI) desktop entry and doesn't add another icon
+
 - generally, you want to run pacman -Syyu once every two weeks
 
 - some things you mostly will want to install: emacs vim ttf-liberation ripgrep llvm clang gcc gdb less
